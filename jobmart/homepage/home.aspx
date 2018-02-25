@@ -26,7 +26,7 @@
         <div class="s-12 l-2">
           <a href="home.aspx" class="logo">
             <!-- Logo White Version -->
-            <img style="height: 70px; width: 70px" class="logo-white" src="../logojobMart2x.PNG" alt="">
+            <img style="height: 50px; width: 70px" class="logo-white" src="../logojobMart2x.PNG" alt="">
             <!-- Logo Dark Version -->
             <img style="height: 100px; width: 100px" class="logo-dark" src="../logojobMart2x.PNG" alt="">
           </a>
@@ -191,7 +191,7 @@
       </section>
       
       <!-- Section 3 -->
-      <section class="section background-white" >  
+      <!--  <section class="section background-white" >  
         <div class="line">
           <h2 class="text-size-50 text-center">Our Stats</h2>
           <hr class="break-small background-primary break-center">
@@ -235,7 +235,7 @@
       <hr class="break margin-top-bottom-0">
       
       <!-- Section 4 -->
-      <section class="section-top-padding full-width">
+<!--       <section class="section-top-padding full-width">
         <h2 class="text-size-50 text-center">Our Work</h2>
         <hr class="break-small background-primary break-center"> 
         <div class="tabs background-primary-hightlight">
@@ -519,8 +519,8 @@
               </div>  
             </div>
          </div>
-      </section>
-      
+      </section> -->
+
       <!-- Section 5 -->    
       <section class="section background-white text-center">
         <div class="line">
@@ -557,7 +557,7 @@
     <footer>
       <!-- Contact Us -->
       <div class="background-primary padding text-center">
-        <p class="h1">Contact Us: 0800 787 787</p>                                                                        
+        <p class="h1">Contact Us: 656 555 5222</p>                                                                        
       </div>
       
       <!-- Main Footer -->
@@ -578,8 +578,8 @@
                 </div>
                 <div class="margin-left-70 margin-bottom-30">
                   <h3 class="margin-bottom-0">Company Address</h3>
-                  <p>Responsive Street 7<br>
-                     London / United Kingdom / Europe
+                  <p>Badda link Road<br>
+                     Bangladesh
                   </p>               
                 </div>
                 <div class="float-left">
@@ -587,8 +587,8 @@
                 </div>
                 <div class="margin-left-70 margin-bottom-30">
                   <h3 class="margin-bottom-0">E-mail</h3>
-                  <p>contact@sampledomain.com<br>
-                     office@sampledomain.com
+                  <p>jobmart0111@gmail.com<br>
+                     biratewu0111@gmail.com
                   </p>              
                 </div>
                 <div class="float-left">
@@ -596,9 +596,8 @@
                 </div>
                 <div class="margin-left-70">
                   <h3 class="margin-bottom-0">Phone Numbers</h3>
-                  <p>0800 4521 800 50<br>
-                     0450 5896 625 16<br>
-                     0798 6546 465 15
+                  <p>01684590604<br>
+                     44646464646
                   </p>             
                 </div>
             </div>
@@ -610,11 +609,11 @@
       <!-- Bottom Footer -->
       <section class="padding background-dark full-width">
         <div class="s-12 l-6">
-          <p class="text-size-12">Copyright 2017, Vision Design - graphic zoo</p>
-          <p class="text-size-12">All images have been purchased from Bigstock. Do not use the images in your website.</p>
+          <p class="text-size-12">Copyright 2018, Vision Design - graphic zoo</p>
+          <p class="text-size-12">All images have been purchased from Bigstock. We use the images in our website.</p>
         </div>
         <div class="s-12 l-6">
-          <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a>
+         <!--  <a class="right text-size-12" href="http://www.myresponsee.com" title="Responsee - lightweight responsive framework">Design and coding<br> by Responsee Team</a> -->
         </div>
       </section>
     </footer>
