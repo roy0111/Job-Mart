@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="signupMasterPage.master.cs" Inherits="signUP_signupMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style2 {
+            width: 100%;
+        }
+        .auto-style3 {
+            width: 341px;
+            height: 182px;
+        }
+        .auto-style4 {
+            width: 806px;
+            height: 182px;
+        }
+        .auto-style5 {
+            height: 151px;
+        }
+        .auto-style6 {
+            height: 182px;
+            text-align: center;
+        }
+        .auto-style7 {
+            text-align: center;
+            color: #000099;
+            font-size: xx-large;
+        }
+        .auto-style8 {
+            font-size: small;
+            color: #003366;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="auto-style2">
+            <tr>
+                <td class="auto-style7" colspan="3">
+                    <br />
+                    <asp:ImageButton ID="ImageButton1" runat="server" Height="113px" ImageUrl="~/logojobMart2x.PNG" PostBackUrl="~/homepage/home.aspx" Width="141px" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+&nbsp;&nbsp; <strong>
+                    Build Your Information.<span class="auto-style8">&nbsp;&nbsp;&nbsp;
+                    <br />
+                    Stay connected with us. </span>
+           </strong>
+                    
+
+                    
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </td>
+                <td class="auto-style4">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+            <p>
+                &nbsp; &nbsp;</p>
+        
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style6">
+                            <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+        
+        
+            <p>
+                &nbsp; &nbsp;</p>
+        
+        
+        </asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5" colspan="3"></td>
+            </tr>
+        </table>
+    <div>
+    </div>
+    </form>
+</body>
+</html>
