@@ -1,0 +1,154 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userMasterPage.master.cs" Inherits="User_userMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+
+    <link href="../design/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="../design/bootstrap/bootstrapSlate.min..css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 472px;
+        }
+
+        .auto-style2 {
+            width: 124px;
+        }
+
+        .auto-style3 {
+            width: 778px;
+        }
+
+        li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+            /* Change the link color on hover */
+            li a:hover {
+                background-color: #555;
+                color: white;
+            }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <div class="container">
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" src="../img/2.jpg" style="width: 100%; height: 450px" alt="First slide">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="bodyId1">
+        <nav class="navbar navbar-expand-lg navbar-warning bg-danger">
+            <h4 style="color: whitesmoke; width: 150px"><strong>Job Net</strong>  </h4>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" style="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor02">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" style="align-items: center" target="_blank" href="../homepage/home.aspx">
+                            <h5 style="color: aliceblue">Home</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Profile.aspx">
+                            <h5 style="color: aliceblue">Profile</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="JobPortal.aspx">
+                            <h5 style="color: aliceblue">job Portal</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="applyHistory.aspx">
+                            <h5 style="color: aliceblue">History</h5>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="companiesList.aspx">
+                            <h5 style="color: aliceblue">Following</h5>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+
+                    <li class="navbar-expand-lg">
+                        <a href="../logout.aspx">
+                            <button type="button" class="btn btn-outline-warning">
+                                <h5 style="color: aliceblue">Log Out</h5>
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                <%--    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" placeholder="Search" type="text">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+    </form>--%>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <%--                    <div id="sideNav1" style="padding-top:25%">
+                        <ul style="list-style-type: none; margin: 0; padding: 0; width: 200px; background-color: white;">
+                            <li class="nav-item active">
+                                <a class="nav-link" style="align-items: center" target="_blank" href="../homepage/home.aspx">
+                                    <h5>Home</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="profile.aspx">
+                                    <h5>Profile</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="jobPost.aspx">
+                                    <h5>job Posts</h5>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="logout.aspx">
+                                    <h5>log out</h5>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>--%>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderLeft" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-7">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderMiddle" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="col-md-2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderRight" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../design/jquery/jquery-3.3.1.min.js"></script>
+</body>
+
+</html>

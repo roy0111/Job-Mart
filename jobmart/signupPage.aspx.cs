@@ -15,17 +15,41 @@ public partial class signupPage : System.Web.UI.Page
     {
         if (DropDownList1.SelectedItem.Text == "Company")
         {
-            Response.Redirect("signup/companySignUpForn.aspx");
+            Response.Redirect("signUp/companySignUpForm.aspx");
         }
-        else
+
+        else if(DropDownList1.SelectedItem.Text == "Applicant")
         {
-            Response.Redirect("signup/individualSignUpForm.aspx");
+            Response.Redirect("signUp/individualSignUpForm.aspx");
+        }
+        else if(DropDownList1.SelectedItem.Text == "Admin")
+        {
+            Response.Redirect("Admin/adminSignUp.aspx");
         }
 
     }
 
-    protected void Button2_Click(object sender, EventArgs e)
+
+
+   
+
+    protected void Page_Load(object sender, EventArgs e)
     {
-        Response.Redirect("signIn.aspx");
+        if (Session["userId"] != null && Session["userMail"] != null)
+        {
+            if (Session["userType"].ToString() == "Company")
+            {
+                Response.Redirect("Company/profile.aspx");
+            }
+            else if (Session["userType"].ToString() == "Applicant")
+            {
+                Response.Redirect("User/Profile.aspx");
+            }
+            else if (Session["userType"].ToString() == "Admin")
+            {
+                Response.Redirect("Admin/profile.aspx");
+            }
+        }
+
     }
 }
