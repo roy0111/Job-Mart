@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="G:\JOBMART\JOBMART\JOBMART\APP_DATA\DATABASEJM.MDF" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=G:\JOBMART\JOBMART\JOBMART\APP_DATA\DATABASEJM.MDF;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="G__JOBMART_JOBMART_JOBMART_APP_DATA_DATABASEJM_MDFConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.loginData" Member="loginDatas">
+    <Type Name="loginData">
+      <Column Name="idNo" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="userMail" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="userPassword" Type="System.String" DbType="VarChar(36)" CanBeNull="true" />
+      <Column Name="usertype" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="activity" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="reg_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="loginData_userData" Member="userData" ThisKey="idNo" OtherKey="userId" Type="userData" Cardinality="One" />
+      <Association Name="loginData_companyDataTbl" Member="companyDataTbl" ThisKey="idNo" OtherKey="companyId" Type="companyDataTbl" Cardinality="One" />
+    </Type>
+  </Table>
+  <Table Name="dbo.userData" Member="userDatas">
+    <Type Name="userData">
+      <Column Name="fullName" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="userId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="addressOfUser" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="dob" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="gender" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="division" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="contactNo" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="degree" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="institute" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="subjectGrad" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Association Name="loginData_userData" Member="loginData" ThisKey="userId" OtherKey="idNo" Type="loginData" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.companyDataTbl" Member="companyDataTbls">
+    <Type Name="companyDataTbl">
+      <Column Name="companyId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyName" Type="System.String" DbType="VarChar(32)" CanBeNull="true" />
+      <Column Name="companyAddress" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="companyWebSite" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="foundationOn" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="headQuater" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="contactNo" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Association Name="companyDataTbl_companyPostRef" Member="companyPostRefs" ThisKey="companyId" OtherKey="companyId" Type="companyPostRef" />
+      <Association Name="loginData_companyDataTbl" Member="loginData" ThisKey="companyId" OtherKey="idNo" Type="loginData" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.companyPostRef" Member="companyPostRefs">
+    <Type Name="companyPostRef">
+      <Column Name="postId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="companyId" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="postingTime" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="activity" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Association Name="companyPostRef_jobPostTbl" Member="jobPostTbl" ThisKey="postId" OtherKey="postId" Type="jobPostTbl" Cardinality="One" />
+      <Association Name="companyDataTbl_companyPostRef" Member="companyDataTbl" ThisKey="companyId" OtherKey="companyId" Type="companyDataTbl" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.jobPostTbl" Member="jobPostTbls">
+    <Type Name="jobPostTbl">
+      <Column Name="postId" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="jobTitle" Type="System.String" DbType="VarChar(70)" CanBeNull="true" />
+      <Column Name="positionName" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="deadLine" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="noOfVacancy" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="jobDescription" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="jobNature" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="jobRequirment" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="salaryOthers" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="jobLocation" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="companyPostRef_jobPostTbl" Member="companyPostRef" ThisKey="postId" OtherKey="postId" Type="companyPostRef" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

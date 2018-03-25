@@ -4,89 +4,134 @@
 
 <html>
 <head runat="server">
-    <title></title>
+  
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
+        .auto-style1 {
+            width: 93%;
+            margin-left: 85px;
+        }
         .auto-style2 {
-            width: 100%;
-        }
-        .auto-style3 {
-            width: 341px;
-            height: 182px;
-        }
-        .auto-style4 {
-            width: 806px;
-            height: 182px;
-        }
-        .auto-style5 {
-            height: 151px;
-        }
-        .auto-style6 {
-            height: 182px;
             text-align: center;
-        }
-        .auto-style7 {
-            text-align: center;
-            color: #000099;
+            width: 512px;
             font-size: xx-large;
         }
-        .auto-style8 {
-            font-size: small;
-            color: #003366;
+        .auto-style3 {
+            width: 512px;
         }
-        </style>
+        .auto-style4 {
+            width: 396px;
+        }
+        .auto-style5 {
+            text-align: center;
+            width: 27px;
+            font-size: xx-large;
+        }
+        .auto-style6 {
+            width: 27px;
+        }
+        .auto-style7 {
+            width: 396px;
+            text-align: center;
+        }
+        .auto-style8 {
+            text-align: center;
+            width: 512px;
+            font-size: xx-large;
+            color: #800000;
+        }
+        .auto-style9 {
+            color: #FFFFFF;
+        }
+        .auto-style10 {
+            -webkit-box-flex: 1;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            text-align: center;
+            height: 120px;
+        }
+    </style>
 </head>
-<body>
+<body  >
+  
     <form id="form1" runat="server">
-        <table class="auto-style2">
+    <div>
+        <table class="auto-style1">
             <tr>
-                <td class="auto-style7" colspan="3">
-                    <br />
-                    <asp:ImageButton ID="ImageButton1" runat="server" Height="113px" ImageUrl="~/logojobMart2x.PNG" PostBackUrl="~/homepage/home.aspx" Width="141px" />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <br />
-&nbsp;&nbsp; <strong>
-                    Build Your Information.<span class="auto-style8">&nbsp;&nbsp;&nbsp;
-                    <br />
-                    Stay connected with us. </span>
-           </strong>
-                    
-
-                    
-                </td>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    </td>
-                <td class="auto-style4">
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                <td class="auto-style7">
+                    &nbsp;</td>
+                <td class="auto-style2">&nbsp;&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style7">
+                    <asp:Button ID="Button1"  CssClass="btn btn-outline-danger" runat="server" Height="60px" Text="Home" Width="120px" Font-Size="15pt" PostBackUrl="~/homepage/home.aspx" OnClientClick="target ='_blank'" />
+                </td>
+                <td class="auto-style8">&nbsp; <span class="auto-style9"><strong>Job Net</strong></span></td>
+                <td class="auto-style5">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style3">
+                    
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
-        
-            <p>
-                &nbsp; &nbsp;</p>
-        
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style6">&nbsp;</td>
+                <td>
+
+           <asp:ContentPlaceHolder id="ContentPlaceHolder2"  runat="server">
+              <div class="card border-danger mb-3" style="max-width: 30rem; max-height:200px">
+              <div class="card-header">Sign In</div>
+              <div class="auto-style10">
+                
+                
+                  <br />
+                  <strong>
+<%--                    <asp:Button ID="Button2"  CssClass="btn btn-success" runat="server" Height="60px" Text="Sign In" Width="120px" Font-Size="20pt" PostBackUrl="~/signIn.aspx"  />--%>
+                 <button class="btn btn-success" runat="server" OnServerClick="pageReDirect"  style=" Width:120px; height:55px; font-size:20px;">Sign In</button>
+                      </strong>
+                  <br />
+                
+                
+              </div>
+            </div>
+               <p>
+                    <br />
+               </p>
         
         </asp:ContentPlaceHolder>
                 </td>
-                <td class="auto-style6">
-                            <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
-        
-        
-            <p>
-                &nbsp; &nbsp;</p>
-        
-        
-        </asp:ContentPlaceHolder>
-
-                </td>
             </tr>
             <tr>
-                <td class="auto-style5" colspan="3"></td>
+                <td class="auto-style4">&nbsp;</td>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style6">&nbsp;</td>
+                <td>&nbsp;</td>
             </tr>
         </table>
-    <div>
+        <br />
+        
     </div>
-    </form>
+        </form>
+
+
+    <link href="../design/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="../design/bootstrap/bootstrapSlate.min..css" rel="stylesheet" />
+    <script src="../design/jquery/jquery-3.3.1.min.js"></script>
+
+        <footer style=" position:static; width:100%; left: 0; bottom: 0; text-align:center;" class="alert alert-dismissible alert-secondary">
+        Copyright © 2018 job net. Some rights reserved.</footer>
 </body>
+ 
 </html>

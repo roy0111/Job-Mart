@@ -11,4 +11,9 @@ public partial class signUP_signupMasterPage : System.Web.UI.MasterPage
     {
 
     }
+
+    protected void pageReDirect(object Source, EventArgs e)
+    {
+        Response.Redirect("~/signIn.aspx");
+    }
 }
