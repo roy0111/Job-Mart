@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Job Mart</title>
+    <title>Job Net</title>
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="css/responsee.css">
@@ -62,8 +62,8 @@
                 <div class="content-center-vertical line">
                   <div class="margin-top-bottom-80">
                     <!-- Title -->
-                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Job Mart is the Most Elegant<br> Agency fo IT job industry</h1>
-                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40">Job Mart can help you find the best jobs, employers and career advice. Find your next dream workspace.</p></div>
+                    <h1 class="text-white margin-bottom-30 text-size-60 text-m-size-30 text-line-height-1">Job Net is the Most Elegant<br> Agency for IT job industry</h1>
+                    <div class="s-12 m-10 l-8 center"><p class="text-white text-size-14 margin-bottom-40">Job Net can help you find the best jobs, employers and career advice. Find your next dream workspace.</p></div>
                     <div class="line">
                       <div class="s-12 m-12 l-3 center">
                         <a class="button button-white-stroke s-12" href="#">Keep Connected to Us</a>
@@ -538,7 +538,7 @@
               <div class="s-12 m-12 l-7 center text-center">
                 <img class="image-testimonial-small" src="img/testimonials-05.png" alt="">
                 <p class="h1 margin-bottom text-size-20">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis</p>
-                <p class="h1 text-size-16">Mark Stoner / Web Developer / Company</h5>
+                <p class="h1 text-size-16">Mark Stoner / Web Developer / Company</p>
               </div>
             </div>
             <div class="item">
